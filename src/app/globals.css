@@ -6,10 +6,10 @@
 }
 
 body {
-  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f8fafc;
+  
   color: #1e293b;
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 .dark {
@@ -26,7 +26,7 @@ body {
 /* ==================== SIDEBAR ==================== */
 .sidebar {
   width: 280px;
-  background: linear-gradient(180deg, #1e3a8a 0%, #1e40af 100%);
+  background: linear-gradient(180deg, #3a4880 0%, #000000 100%);
   color: white;
   padding: 2rem 1.5rem;
   display: flex;
@@ -38,7 +38,8 @@ body {
 
 .sidebar-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+ 
 }
 
 .portal-subtitle {
@@ -134,10 +135,11 @@ body {
 .main-content {
   flex: 1;
   padding: 3rem;
-  background: #f1f5f9;
+  background: 
+    linear-gradient(rgba(241, 245, 249, 0.65), rgba(241, 245, 249, 0.85)),
+    url('/homebg.jpeg') center center / cover no-repeat fixed;
   overflow-y: auto;
 }
-
 .dark .main-content {
   background: #1e293b;
 }
@@ -647,8 +649,8 @@ body {
 .sidebar-toggle {
   display: none;
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 15px;
+  left: 10px;
   z-index: 1000;
   background: #4338ca;
   color: white;
@@ -715,7 +717,7 @@ body {
 @media (max-width: 992px) {
   .sidebar {
     position: fixed;
-    left: -300px;
+    left: -400px;
     top: 0;
     height: 100vh;
     z-index: 999;

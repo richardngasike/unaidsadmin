@@ -42,7 +42,7 @@ export default function AdminPanel() {
   const profileCount = profileList.length;
   const progress = Math.round((roadmapCount / totalCountries) * 100);
 
-  // Mock Analytics Data (replace with real API later)
+  // Mock Analytics Data (i will replace with API later)
   const analyticsData = {
     totalVisitors: 28492,
     uniqueVisitors: 18921,
@@ -279,7 +279,7 @@ export default function AdminPanel() {
           <div className="login-overlay" />
           <div className="login-box">
             <Image src="/logounaids.svg" alt="UNAIDS" width={250} height={250} priority />
-            <p className="portal-title">Sustainability Admin Portal</p>
+            <p className="portal-title">Sustainability Portal</p>
             <form onSubmit={login}>
               <input type="password" placeholder="Enter password" value={passwordInput} onChange={(e) => setPasswordInput(e.target.value)} required />
               <button type="submit">Login</button>
@@ -302,7 +302,7 @@ export default function AdminPanel() {
         {/* Sidebar */}
         <aside className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
           <div className="sidebar-header">
-            <Image src="/logounaids.svg" alt="UNAIDS" width={150} height={150} priority />
+            <Image src="/logounaids.svg" alt="UNAIDS" width={200} height={100} priority />
             <p className="portal-subtitle">Admin Portal</p>
           </div>
 
@@ -327,7 +327,7 @@ export default function AdminPanel() {
 
         <div className="main-wrapper">
           <header className="main-header">
-            <h1>UNAIDS Admin</h1>
+            <h1>Admin Portal</h1>
             <div className="header-user-info">
               <FaUser /> <strong>Admin</strong>
               <small><FaCalendarAlt /> {lastLogin.split(',')[0]}</small>
