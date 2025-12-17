@@ -17,7 +17,7 @@ import {
   PieChart, Pie, Cell
 } from 'recharts';
 
-const API_URL = "http://localhost:8000";
+const API_URL = "http://unaids.vercel.app";
 const CLIENT_PASSWORD = "16359101008";
 
 export default function AdminPanel() {
