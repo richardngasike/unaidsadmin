@@ -17,7 +17,7 @@ import {
   PieChart, Pie, Cell
 } from 'recharts';
 
-const API_URL = "http://unaidsadmin.vercel.app";
+const API_URL = "https://unaids-fastapi-backend.onrender.com";
 const CLIENT_PASSWORD = "16359101008";
 
 export default function AdminPanel() {
